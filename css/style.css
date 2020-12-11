@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap');
+@-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+@keyframes focus-in-expand-fwd{0%{letter-spacing:-.5em;transform:translateZ(-800px);filter:blur(12px);opacity:0}100%{transform:translateZ(0);filter:blur(0);opacity:1}}
+::-webkit-scrollbar {
+  width: 8.5px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  margin: 5px;
+  background-color: #999;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: #6b6a6a;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100%;
+  overflow-x: visible;
+}
+a{
+  text-decoration: none;
+}
+p{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14pt;
+  color: #ffffff;
+}
+h1{
+  font-family: 'El Messiri', sans-serif;
+  color: #ffffff;
+  font-size: 78pt;
+}
+h3{
+  font-family: 'El Messiri', sans-serif;
+  color: #000000;
+  font-size: 40pt;
+}
+/* Navigation - home page */
+ul{
+  list-style-type: none;
+  margin-left: 15%;
+  padding: 7px;
+}
+#navbar{
+  width: 85%;
+  border-radius: 5px;
+  position: fixed;
+  top: 8px;
+  left: 144px;
+  box-shadow: 0px 0px 15px -3px #000000;
+  background-color: #000000;
+  z-index: 2;
+}
+li{
+  display: inline-block;
+  margin-left: 40px;
+}
+li:first-child{
+  margin-left: 0px;
+}
+li a{
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+li a:link{
+  padding: 10px 15px;
+  text-align: center;
+  display: inline-block;
+}
+li a:hover{
+  background-color: rgba(229, 69, 0, 0.8);
+  border-radius: 5px;
+}
+#logo{
+  position: fixed;
+  top: 19px;
+  left: 175px;
+}
+.cleaner{
+  clear: both;
+}
+/* Home background image and Welcome block */
+#home-background{
+  height: 900px;
+  background-image: url("../img/home-background.jpg");
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px -15px 10px 8px rgba(0,0,0,0.5);
+}
+.welcome-block{
+  animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  display: inline-block;
+  margin: 369px 38.8%;
+  padding: 10px 10px;
+  text-align: center;
+}
+.welcome-block p{
+  margin-top: -40px;
+}
+.scroll-down{
+  margin-top: 18px;
+  margin-left: 41%;
+}
+.scroll-down h2{
+  font-family: 'Ubuntu', sans-serif;
+  color: #000000;
+}
+/* Information content, work time and images */
+#content{
+  width: 100%;
+  height: 900px;
+  background-color: #ece8cf;
+}
+.block{
+  margin-top: 80px;
+  float: left;
+  height: 260px;
+  padding: 10px 15px;
+  box-shadow: 1px 2px 15px -5px #000000;
+  border-radius: 20px;
+  margin-left: 21.5%;
+}
+.block p{
+  color: #000000;
+  text-align: justify;
+  font-size: 16pt;
+}
+.information{
+  width: 445px;
+}
+.time-work{
+  margin-left: 291px;
+}
+.time-work p{
+  text-align: center;
+  font-size: 17pt;
+}
+.clock-icon{
+  margin-left: 130px;
+}
+.kyoto_text{
+  float: left;
+  margin-top: 70px;
+  margin-left: 412px;
+}
+#images{
+  float: left;
+  margin-top: 250px;
+  margin-left: -585px;
+}
+.kyoto{
+  width: 315px;
+  height: 250px;
+  transition: all 0.2s;
+}
+.kyoto:hover{
+  transform: scale(1.10);
+}
+.one{
+  box-shadow: 1px 2px 15px -5px #000000;
+  border-radius: 20px;
+  background-image: url("../img/kyoto_1.jpg");
+  background-size: cover;
+}
+.one p{
+  color: #000000;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 16pt;
+  text-shadow: 0px 2px 3px #000000;
+}
+.two{
+  margin-top: -300px;
+  margin-left: 390px;
+  box-shadow: 1px 2px 15px -5px #333333;
+  border-radius: 20px;
+  background-image: url("../img/belgrade.jpg");
+  background-size: cover;
+}
+.two p{
+  color: #000000;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 16pt;
+  text-shadow: 0px 2px 3px #333333;
+}
+.three{
+  margin-top: -200px;
+  margin-left: 775px;
+  box-shadow: 1px 2px 15px -5px #000000;
+  border-radius: 20px;
+  background-image: url("../img/kyoto_3.jpg");
+  background-size: cover;
+}
+.three p{
+  color: #000000;
+  padding-top: 5px;
+  padding-left: 100px;
+  text-align: center;
+  font-size: 16pt;
+  text-shadow: 0px 2px 3px #333333;
+}
+/* Menu page */
+#container{
+  width: 100%;
+  height: 1900px;
+  background-color: #ece8cf;
+}
+#menu-bgimg{
+  display: inline-block;
+  margin-top: 100px;
+  margin-left: 21.5%;
+  width: 1090px;
+  height: 1650px;
+  box-shadow: 1px 2px 15px -5px #000000;
+  background-image: url("../img/wood-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.food{
+  width: 350px;
+  height: 310px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #000000;
+}
+.food h3{
+  color: rgba(229, 69, 0, 0.8);
+  text-align: center;
+}
+.food p{
+  padding: 5px 10px;
+}
+.ramen{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+#ramen-image{
+  float: right;
+  margin-top: -308px;
+  margin-right: 63px;
+  width: 330px;
+  height: 300px;
+  box-shadow: 1px 2px 15px -5px #000000;
+  background-image: url("../img/ramen.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sushi{
+  float: right;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+#sushi-image{
+  float: left;
+  margin-top: 16px;
+  margin-left: 61px;
+  width: 330px;
+  height: 300px;
+  box-shadow: 1px 2px 15px -5px #000000;
+  background-image: url("../img/sushi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.yakitori{
+  margin-top: 335px;
+  margin-left: 50px;
+}
+#yakitori-image{
+  float: right;
+  margin-top: -308px;
+  margin-right: 63px;
+  width: 330px;
+  height: 300px;
+  box-shadow: 1px 2px 15px -5px #000000;
+  background-image: url("../img/yakitori.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.drinks{
+ float: right;
+ margin-top: 10px;
+ margin-right: 50px;
+}
+#drinks-image{
+  float: left;
+  margin-top: 16px;
+  margin-left: 61px;
+  width: 330px;
+  height: 300px;
+  box-shadow: 1px 2px 15px -5px #000000;
+  background-image: url("../img/drinks.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#order-form{
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 2px 15px -5px #000000;
+  border: 2px solid #000000;
+  padding: 25px;
+  display: inline-block;
+  margin-top: 350px;
+  margin-left: -330px;
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+}
+#order-form p{
+  margin-top: -17px;
+  font-size: 10pt;
+}
+#food-select{
+  margin-left: 2px;
+  cursor: pointer;
+}
+#drink{
+  cursor: pointer;
+}
+.button{
+  margin-top: 5px;
+  background-color: rgb(229, 69, 0);
+  color: #ffffff;
+  padding: 3px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+/* About */
+#about-content{
+  float: left;
+  margin-top: 200px;
+  margin-left: 550px;
+  width: 750px;
+  height: 550px;
+  box-shadow: 1px 2px 15px 4px #000000;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+}
+#my_photo{
+  float: left;
+  margin: 15px 15px ;
+  width: 250px;
+  height: 400px;
+  background-image: url("../img/my_photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+#my_photo_text{
+  float: right;
+  margin: 15px 15px;
+  padding: 5px 10px; 
+  width: 405px;
+  background-color: rgba(236, 232, 207, 0.8);
+  border-radius: 20px;
+  text-align: justify;
+}
+#my_photo_text h2{
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+#my_photo_text p{
+  margin-top: 5px;
+  color: #000000;
+}
+/* Footer part */
+#footer{
+  background-color: #000000;
+  padding: 25px 21.5%;
+}
+#sitemap{
+  display: inline-block;
+}
+#smp{
+  padding-left: 14px;
+}
+#smp:hover{
+  color: #6b6a6a;
+}
+#soc{
+  float: right;
+  margin-top: -20px;
+}
+.fab, .fas{
+  font-size: 28pt;
+  margin-left: 40px;
+  color: #ffffff;
+}
+.fab:hover, .fas:hover{
+  transform: scale(1.10);
+}
