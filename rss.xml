@@ -2,16 +2,16 @@
 <rss version="2.0">
 <channel>
   <title>Suba's Ramen News</title>
-  <link></link>
+  <link>https://aleksasubasic.github.io/index.html</link>
   <description>If you love Japan then you’ll love us.</description>
   <item>
     <title>Suba's Ramen!- Home Page</title>
-    <link></link>
+    <link>https://aleksasubasic.github.io/index.html</link>
     <description>Get the latest news about our restaurant!</description>
   </item>
   <item>
     <title>Suba's Ramen! - Menu Page</title>
-    <link></link>
+    <link>https://aleksasubasic.github.io/menu.html</link>
     <description>We changed our menu, check it out!</description>
   </item>
 </channel>
