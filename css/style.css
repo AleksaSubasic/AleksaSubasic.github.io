@@ -312,12 +312,12 @@ li a:hover{
 }
 #order-form p{
   margin-top: -17px;
-  width: 107px;
   font-size: 10pt;
 }
 #food-select{
   margin-left: 2px;
   cursor: pointer;
+  width: 107px;
 }
 #drink{
   cursor: pointer;
