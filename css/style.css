@@ -137,7 +137,7 @@ li{
     color: #0C2C3D;
 }
 
-/* -------------------- HOME PAGE MAIN (images and text) -------------------- (resorts line 236) */
+/* -------------------- HOME PAGE MAIN (images and text) -------------------- (resorts line 268) */
 .h-main-imgtxt{
     display: flex;
     flex-direction: column;
@@ -347,16 +347,85 @@ li{
     justify-content: center;
     align-items: center;
     width: 1800px;
-    height: 500px;
+    height: 720px;
 }
-.koka{
-    width: 550px;
-    height: 250px;
-    border: 2px solid black;
+.r-frm-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 720px;
+    height: 580px;
 }
-.koka h2{
+
+/* -------------------- RESORTS FORM -------------------- */
+input{
+    width: 220px;
+    outline: none;
     text-align: center;
-    padding-top: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+    padding: 10px;
+    border: 4px solid #0C2C3D;
+    border-radius: 15px;
+    color: #0C2C3D;
+    transition: 0.3s;
+  }
+input:focus {
+    border: 4px solid #5EA6AF;
+}
+select{
+    width: 220px;
+    outline: none;
+    text-align: center;
+    padding: 10px;
+    border: 4px solid #0C2C3D;
+    border-radius: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+    color: #0C2C3D;
+}
+button{
+    width: 105px;
+    background-color: #ffffff;
+    border: 4px solid #0C2C3D;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    border: 4px solid #5EA6AF;
+}
+#form-frame{
+    display: flex;
+    width: 600px;
+    height: 550px;
+    border: 4px solid #0C2C3D;
+    border-radius: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+}
+#form-frame-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+}
+input[type=date]{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+    padding: 7px;
+}
+#form-frame-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
 }
 
 
