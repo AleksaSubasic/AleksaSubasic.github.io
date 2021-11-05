@@ -145,8 +145,50 @@
     </main>
     <div class="wrp">
         <div id="r-frm">
-            <div class="koka"> <h2>More islands coming soon!</h2> </div>
-            <div class="koka"> <h2>Forma:</h2> </div>
+            <div class="r-frm-block"> <h2>More islands coming soon!</h2> </div>
+            <div class="r-frm-block">
+                <form action="" id="form-frame">
+                    <div id="form-frame-left">
+                        <div>
+                            <label for="Fname">First name&#58;</label> <br/>
+                            <input type="text" name="Fname" id="Fname" placeholder="First name" required>
+                        </div>
+                        <div>
+                            <label for="island-select">Select island&#58;</label> <br/>
+                            <select name="island" id="island-select" required>
+                                <option value="Ishigaki">Ishigaki</option>
+                                <option value="Zamami">Zamami</option>
+                                <option value="Yakushima">Yakushima</option>
+                                <option value="Amami">Amami</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="Date">Check-in&#58;</label> <br/>
+                            <input type="date" id="Date">
+                        </div>
+                        <div>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                    <div id="form-frame-right">
+                        <div>
+                            <label for="Lname">Last name&#58;</label> <br/>
+                            <input type="text" name="Lname" id="Lname" placeholder="Last name" required>
+                        </div>
+                        <div>
+                            <label for="pasngr">No. of passangers&#58;</label> <br/>
+                            <input type="number" name="pasngr" id="pasngr" max="5" min="1" placeholder="Max 5" required>
+                        </div>
+                        <div>
+                            <label for="Date">Check-out&#58;</label> <br/>
+                            <input type="date" id="Date">
+                        </div>
+                        <div>
+                            <button type="reset">Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     
