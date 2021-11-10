@@ -124,7 +124,7 @@ li{
     color: #fff;
 }
 
-/* -------------------- HEADER TEXT (center and bottom) -------------------- */
+/* -------------------- HOME HEADER TEXT (center and bottom) -------------------- */
 #h-header-txtc{
     display: flex;
     justify-content: center;
@@ -134,7 +134,7 @@ li{
     animation: fade-in-top 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-/* -------------------- HOME PAGE MAIN (images and text) -------------------- (resorts line 270) */
+/* -------------------- HOME PAGE MAIN (images and text) -------------------- (resorts line 266) */
 .h-main-imgtxt{
     display: flex;
     flex-direction: column;
@@ -443,7 +443,7 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1800px;
+    /* width: 1800px; */
     height: 780px;
 }
 .i-header-box{
@@ -515,6 +515,59 @@ button:hover{
     animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
 }
 
+/* -------------------- ISLANDS MAIN -------------------- */
+.i-main-c{
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 1000px;
+    /* border: 1px solid black; */
+}
+.i-main-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.i-main-text{
+    width: 480px;
+    /* height: 740px; */
+    border-radius: 20px;
+    border: 5px solid #5EA6AF;
+    text-align: justify;
+}
+.i-main-text p{
+    padding: 20px;
+    font-size: 16.5pt;
+    color: #0C2C3D;
+}
+.i-main-img{
+    width: 765px;
+    height: 665px;
+    /* border: 1px solid #5EA6AF; */
+}
+
+.i-main-bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+    height: 210px;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+.i-main-images{
+    width: 170px;
+    height: 170px;
+    border: 2px solid #5EA6AF;
+    border-radius: 20px;
+    background-image: url(../islands/640px-420px/ishigaki-640-420.jpg);
+    transition: 0.3s;
+}
+.i-main-images:hover{
+    transform: scale(1.1,1.1);
+}
 
 
 
