@@ -105,7 +105,7 @@ li{
     width: 200px;
     height: 50px;
 }
-#navigation li{
+#navigation ul{
     display: flex;
     margin-right: 106px;
     margin-left: auto;
@@ -203,7 +203,7 @@ li{
 }
 .island-name{
     /* z-index: 3; */
-    margin-top: -39px;
+    margin-top: -41px;
     /* width: 220px; */
     padding: 6px 0px;
     text-align: center;
@@ -596,12 +596,12 @@ footer{
     margin-left: auto;
     margin-right: 150px;
 }
-#fo-right li ul a{
+#fo-right ul li a{
     font-size: 22pt;
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
     transition: 0.3s;
 }
-#fo-right li ul a:hover{
+#fo-right ul li a:hover{
     color: #5EA6AF;
 }
