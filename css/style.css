@@ -3,6 +3,7 @@
 @-webkit-keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 @-webkit-keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 @-webkit-keyframes fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+@-webkit-keyframes fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
 
 
 /* -------------------- MAIN COLORS -------------------- */
@@ -43,7 +44,7 @@ main{
     /* border: 1px solid red; */
     /* width: 1700px; */
     min-height: 1000px;
-    margin: 0px auto;
+    /* margin: 0px auto; */
 }
 li{
     list-style: none;
@@ -51,6 +52,7 @@ li{
 .wrp{
     display: flex;
     justify-content: center;
+    /* border: 1px solid red; */
 }
 
 /* -------------------- TOOLTIP -------------------- */
@@ -92,6 +94,8 @@ li{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1300px;
+    position: relative;
+    z-index: 99;
 }
 
 /* -------------------- NAVIGATION -------------------- */
@@ -252,8 +256,8 @@ li{
     background-color: rgba(57, 124, 147, 1);
 }
 .zamami{
-    margin-left: auto;
-    margin-right: 150px;
+    /* margin-left: auto; */
+    /* margin-right: 150px; */
     border: 4px solid rgba(57, 124, 147, 1);
 }
 .zam{
@@ -449,12 +453,19 @@ button:hover{
 .i-header-box{
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
     width: 720px;
     height: 700px;
 }
 .i-header-box h1{
     -webkit-animation: fade-in-left 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: fade-in-left 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.i-header-box h2{
+    -webkit-animation: fade-in-left 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-left 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    text-align: center;
 }
 .w-images{
     flex-direction: column;
@@ -476,22 +487,22 @@ button:hover{
     position: relative;
     top: 30px;
     left: 30px;
-    -webkit-animation: fade-in-top 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: fade-in-top 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: fade-in-top 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-top 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 #second-image{
     position: relative;
     top: 60px;
     left: 10px;
-    -webkit-animation: fade-in-top 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
-    animation: fade-in-top 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+    -webkit-animation: fade-in-top 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+    animation: fade-in-top 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
 }
 #third-image{
     position: relative;
     top: 90px;
     left: -10px;
-    -webkit-animation: fade-in-top 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
-    animation: fade-in-top 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
+    -webkit-animation: fade-in-top 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
+    animation: fade-in-top 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
 }
 #first-image2{
     position: relative;
@@ -560,7 +571,7 @@ button:hover{
 .i-main-images{
     width: 170px;
     height: 170px;
-    border: 2px solid #5EA6AF;
+    border: 4px solid #5EA6AF;
     border-radius: 20px;
     background-image: url(../islands/640px-420px/ishigaki-640-420.jpg);
     transition: 0.3s;
@@ -569,7 +580,70 @@ button:hover{
     transform: scale(1.1,1.1);
 }
 
+#my_photo{
+    margin-bottom: 30px;
+    border: 4px solid #0C2C3D;
+    border-radius: 20px;
+    width: 300px;
+    height: 450px;
+    -webkit-animation: fade-in-left 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+    animation: fade-in-left 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+}
+#about-txt{
+    padding: 10px;
+    width: 575px;
+    background-color: #fff;
+    border: 4px solid #0C2C3D;
+    border-radius: 20px;
+    -webkit-animation: fade-in-right 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
+    animation: fade-in-right 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.6s both;
+}
+#about-txt p{
+    color: #0C2C3D;
+    font-size: 16.5pt;
+    text-align: justify;
+}
+.cloud{
+    position: relative;
+    z-index: 99;
+    -webkit-animation: fade-in-right 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.8s both;
+    animation: fade-in-right 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.8s both;
+}
+.left-one{
+    left: -150px;
+    top: 10px;
+    z-index: -1;
+}
+.right-one{
+    left: 150px;
+    top: -40px;
+}
+.right-two{
+    left: 200px;
+    top: 9px;
+}
+.left-two{
+    left: -200px;
+    top: -11px;
+    z-index: -1;
+}
 
+/* cloud left-one -- 
+left: -150px;
+top: 10px;
+
+cloud right-one -- 
+left: 150px;
+top: -40px; 
+
+cloud right-two --
+left: 200px;
+top: 9px;
+
+cloud left-two -- 
+left: -200px;
+top: -11px;
+*/
 
 
 
