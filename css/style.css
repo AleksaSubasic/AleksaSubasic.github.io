@@ -174,12 +174,15 @@ li{
 .part3 a{
     font-family: 'Josefin Sans', sans-serif;
     color: #0C2C3D;
-    font-size: 42pt;
-    text-decoration: underline;
+    font-size: 35pt;
+    /* text-decoration: underline; */
+    background-color: #5EA6AF;
+    padding: 15px;
+    border-radius: 20px;
     transition: 0.3s;
 }
 .part3 a:hover{
-    color: #155277;
+    color: #fff;
     transform: scale(1.1, 1.1)
 }
 
