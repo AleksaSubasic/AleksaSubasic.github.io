@@ -70,18 +70,13 @@ li{
 .pop-uptext{
     position: absolute;
     visibility: hidden;
-    z-index: 99;
+    padding: 6px;
     bottom: -75px;
-    left: -50px;
-    width: 300px;
+    width: 270px;
     background-color: #4C91A1;
     border: 3px solid #5EA6AF;
     border-radius: 20px;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16.5pt;
-    padding: 6px;
-    color: #fff;
+    z-index: 99;
 }
 .pop-up:hover .pop-uptext{
     visibility: visible;
@@ -92,11 +87,48 @@ li{
     color: #5EA6AF;
 }
 
+/* -------------------- QUOTE -------------------- */
+.wave-quote{
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+    height: 210px;
+    line-height: 70px;
+    width: auto;
+    background-image: url("images/waves1.svg");
+    background-position: bottom;
+    background-size: cover;
+}
+.wave-blur{
+    width: auto;
+    height: 90px;
+    background: linear-gradient(180deg, rgba(12,44,61,1) 20%, rgba(12,44,61,0.3981967787114846) 70%, rgba(12,44,61,0) 100%);
+}
+
+/* -------------------- TO-TOP BUTTON -------------------- */
+#button-to-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+    top: 0px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #5EA6AF;
+    font-size: 28pt;
+    transition: 0.3s;
+}
+#button-to-top:hover{
+    transform: translateY(-10px);
+}
+
 /* -------------------- HEADER BACKGROUND IMAGE -------------------- */
 #header-bgimg{
     height: 1000px;
     /* border: 1px solid black; */
-    background-image: url(images/Japan1.svg);
+    background-image: url("images/Japan1.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1300px;
@@ -145,7 +177,7 @@ li{
     animation: fade-in-top 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-/* -------------------- HOME PAGE MAIN (images and text) -------------------- (resorts line 266) */
+/* -------------------- HOME PAGE MAIN (images and text) -------------------- (resorts line 292) */
 .h-main-imgtxt{
     display: flex;
     flex-direction: column;
@@ -153,49 +185,18 @@ li{
     margin-bottom: 150px;
     /* width: auto; */
     height: 900px;
-    background-image: url(images/Okinawa.svg);
+    background-image: url("images/Okinawa.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1230px;
 }
-.part2{
-    background-image: url(images/Kyushu.svg);
+.h-middle{
+    background-image: url("images/Kyushu.svg");
     background-size: 1530px;
 }
-.part3{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
-    background-image: url(images/Koi1-50.svg);
-    background-size: 1000px;
-    text-align: center;
-}
-.part3 h2{
-    font-size: 50pt;
-}
-.part3 p{
-    color: #0C2C3D;
-    font-size: 25pt;
-}
-.part3 a{
-    font-family: 'Josefin Sans', sans-serif;
-    color: #0C2C3D;
-    font-size: 35pt;
-    /* text-decoration: underline; */
-    background-color: #5EA6AF;
-    padding: 15px;
-    border-radius: 20px;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🏘</text></svg>") 16 0,auto; /*!emojicursor.app*/
-    transition: 0.3s;
-}
-.part3 a:hover{
-    color: #fff;
-    transform: scale(1.1, 1.1)
-}
 
-/* -------------------- RECTANGLE ONE (images and text) -------------------- */
-.rectangle{
+/* -------------------- HOME PAGE - box image and text -------------------- */
+.box-img-text{
     display: flex;
     justify-content: space-around;
     width: 1800px;
@@ -222,7 +223,6 @@ li{
     /* width: 220px; */
     padding: 6px 0px;
     text-align: center;
-    font-size: 16pt;
     border-radius: 0px 0px 20px 20px;
     background-color: rgba(94, 166, 175, 0.7);
 }
@@ -236,25 +236,7 @@ li{
     border: 4px solid #4C91A1;
 }
 
-/* -------------------- QUOTE -------------------- */
-.wave-quote{
-    margin: 0px auto;
-    text-align: center;
-    height: 210px;
-    line-height: 70px;
-    width: auto;
-    background-image: url(images/waves1.svg);
-    background-position: bottom;
-    background-size: cover;
-}
-.wave-blur{
-    width: auto;
-    height: 90px;
-    background: linear-gradient(180deg, rgba(12,44,61,1) 20%, rgba(12,44,61,0.3981967787114846) 70%, rgba(12,44,61,0) 100%);
-    
-}
-
-/* -------------------- RECTANGLE TWO (images and text) -------------------- */
+/* -------------------- HOME PAGE - box image and text 2 -------------------- */
 .two{
     margin-top: auto;
 }
@@ -272,6 +254,37 @@ li{
     margin-top: -223px;
     border-radius: 20px 20px 0px 0px;
     background-color: rgba(57, 124, 147, 0.7);
+}
+
+/* -------------------- HOME PAGE - Bottom quote and link -------------------- */
+.h-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    background-image: url("images/Koi1-50.svg");
+    background-size: 1000px;
+    text-align: center;
+}
+.h-bottom h2{
+    font-size: 50pt;
+}
+.h-bottom p{
+    color: #0C2C3D;
+    font-size: 25pt;
+}
+.h-bottom a{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #0C2C3D;
+    font-size: 35pt;
+    background-color: #5EA6AF;
+    padding: 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.h-bottom a:hover{
+    color: #fff;
+    transform: scale(1.1, 1.1)
 }
 
 
@@ -305,7 +318,6 @@ li{
     height: 270px;
     border-radius: 10px;
     transition: 0.3s;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌊</text></svg>") 16 0,auto; /* !emojicursor.app */
 }
 .r-link-info p{
     /* font-size: 30pt; bilo */
