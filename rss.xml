@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>Aqua Travel News</title>
+  <link>https://aleksasubasic.github.io/index.html</link>
+  <description>If you love traveling, then you’ll love us.</description>
+  <item>
+    <title>Aqua Travel - Resorts</title>
+    <link>https://aleksasubasic.github.io/resorts.html</link>
+    <description>Get the latest news about our traveling deals!</description>
+  </item>
+  <item>
+    <title>Aqua Travel - Islands</title>
+    <link>https://aleksasubasic.github.io/islands.html</link>
+    <description>We added more information about islands, check it out!</description>
+  </item>
+</channel>
+</rss>
