@@ -44,19 +44,15 @@ h2{
 a{
     text-decoration: none;
 }
-main{
-    /* border: 1px solid red; */
-    /* width: 1700px; */
+/* main{
     min-height: 1000px;
-    /* margin: 0px auto; */
-}
+} */
 li{
     list-style: none;
 }
 .wrp{
     display: flex;
     justify-content: center;
-    /* border: 1px solid red; */
 }
 .white{
     color: #fff;
@@ -65,7 +61,6 @@ li{
 /* -------------------- POP-UP INFO -------------------- */
 .pop-up{
     position: relative;
-    /* display: inline-block; */
 }
 .pop-uptext{
     position: absolute;
@@ -127,7 +122,6 @@ li{
 /* -------------------- HEADER BACKGROUND IMAGE -------------------- */
 #header-bgimg{
     height: 1000px;
-    /* border: 1px solid black; */
     background-image: url("images/Japan1.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -140,18 +134,12 @@ li{
 #navigation{
     display: flex;
     align-items: center;
-    /* height: 100px; */
+    width: 80%;
     padding: 25px 0px;
 }
 #navigation #logo{
-    margin-left: 150px;
     width: 200px;
     height: 50px;
-}
-#navigation ul{
-    display: flex;
-    margin-right: 106px;
-    margin-left: auto;
 }
 #nav-links{
     font-size: 22pt;
@@ -161,7 +149,14 @@ li{
     margin-right: 30px;
     transition: 0.35s;
 }
-#navigation a:hover{
+#navigation ul{
+    display: flex;
+    margin-left: auto;
+}
+/* #navigation ul:nth-last-child(4){
+    margin-right: 0px;
+} */
+#navigation #nav-links:hover{
     border-radius: 7px;
     background-color: #0c2c3d;
     color: #fff;
@@ -183,7 +178,6 @@ li{
     flex-direction: column;
     margin-top: 100px;
     margin-bottom: 150px;
-    /* width: auto; */
     height: 900px;
     background-image: url("images/Okinawa.svg");
     background-repeat: no-repeat;
@@ -202,7 +196,6 @@ li{
     width: 1800px;
 }
 .image-box{
-    /* margin-left: 100px; */
     position: relative;
     z-index: 200;
     width: 220px;
@@ -218,9 +211,7 @@ li{
     border: 4px solid RGBA(94, 166, 175, 1);
 }
 .island-name{
-    /* z-index: 3; */
     margin-top: -41px;
-    /* width: 220px; */
     padding: 6px 0px;
     text-align: center;
     border-radius: 0px 0px 20px 20px;
@@ -241,13 +232,9 @@ li{
     margin-top: auto;
 }
 .two .text-box{
-    /* margin-left: 300px;
-    margin-right: 0px; */
     background-color: rgba(57, 124, 147, 1);
 }
 .zamami{
-    /* margin-left: auto; */
-    /* margin-right: 150px; */
     border: 4px solid rgba(57, 124, 147, 1);
 }
 .zam{
@@ -320,7 +307,6 @@ li{
     transition: 0.3s;
 }
 .r-link-info p{
-    /* font-size: 30pt; bilo */
     font-size: 35pt;
     color: #0C2C3D;
 }
@@ -343,7 +329,6 @@ li{
     justify-content: space-evenly;
 }
 .r-main-imgtxt h2{
-    /* font-size: 100pt; bilo */
     font-size: 65pt;
     color: #4c91a1;
     opacity: 50%;
@@ -479,7 +464,6 @@ select{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 1800px; */
     height: 780px;
 }
 .i-header-box{
@@ -565,17 +549,14 @@ select{
     flex-direction: column;
     width: 1440px;
     height: 1000px;
-    /* border: 1px solid black; */
 }
 .i-main-top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid red; */
 }
 .i-main-text{
     width: 480px;
-    /* height: 740px; */
     border-radius: 20px;
     border: 5px solid #5EA6AF;
     text-align: justify;
@@ -588,7 +569,6 @@ select{
 .i-main-img{
     width: 765px;
     height: 665px;
-    /* border: 1px solid #5EA6AF; */
 }
 
 .i-main-bottom{
@@ -598,14 +578,12 @@ select{
     margin-top: auto;
     height: 210px;
     border-radius: 20px;
-    /* border: 1px solid black; */
 }
 .i-main-images{
     width: 170px;
     height: 170px;
     border: 4px solid #5EA6AF;
     border-radius: 20px;
-    /* background-image: url(../islands/640px-420px/ishigaki-640-420.jpg); */
     transition: 0.3s;
 }
 .i-main-images:hover{
