@@ -5,7 +5,7 @@
 @-webkit-keyframes fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
 @-webkit-keyframes fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
 
-/* SAJT JE NAMENJEN ZA EKRAN OD 21" I FULL HD REZOLUCIJU (1920X1080) */
+/* SAJT JE NAMENJEN ZA EKRAN OD 21" I FULL HD REZOLUCIJU (1920X1080)!!! */
 
 /* -------------------- MAIN COLORS -------------------- */
 /* 
@@ -45,9 +45,6 @@ h2{
 a{
     text-decoration: none;
 }
-/* main{
-    min-height: 1000px;
-} */
 li{
     list-style: none;
 }
@@ -154,9 +151,6 @@ li{
     display: flex;
     margin-left: auto;
 }
-/* #navigation ul:nth-last-child(4){
-    margin-right: 0px;
-} */
 #navigation #nav-links:hover{
     border-radius: 7px;
     background-color: #0c2c3d;
@@ -173,7 +167,7 @@ li{
     animation: fade-in-top 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-/* -------------------- HOME PAGE MAIN (images and text) -------------------- (resorts line 292) */
+/* -------------------- HOME PAGE MAIN (images and text) -------------------- (resorts page - line 273) */
 .h-main-imgtxt{
     display: flex;
     flex-direction: column;
@@ -276,7 +270,7 @@ li{
 }
 
 
-/* ---------------------------------------- RESORTS PAGE ---------------------------------------- */
+/* ---------------------------------------- RESORTS PAGE ---------------------------------------- (islands page - line 454) */
 
 
 /* -------------------- RESORTS HEADER -------------------- */
@@ -457,7 +451,7 @@ select{
 }
 
 
-/* ---------------------------------------- ISLANDS PAGE ---------------------------------------- */
+/* ---------------------------------------- ISLANDS PAGE ---------------------------------------- (islands page - line 589) */
 
 
 /* -------------------- ISLANDS HEADER -------------------- */
@@ -591,6 +585,11 @@ select{
     transform: scale(1.1,1.1);
 }
 
+
+/* ---------------------------------------- ABOUT PAGE ---------------------------------------- */
+
+
+/* -------------------- ABOUT MAIN -------------------- */
 #my_photo{
     margin-bottom: 30px;
     border: 4px solid #0C2C3D;
